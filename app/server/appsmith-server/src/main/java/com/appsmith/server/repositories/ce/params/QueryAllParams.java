@@ -82,7 +82,7 @@ public class QueryAllParams<T extends BaseDomain> {
         return repo.updateExecute(this, resource);
     }
 
-    public Mono<Integer> updateFirst(@NonNull UpdateDefinition update) {
+    public Mono<Integer> updateFirst1(@NonNull UpdateDefinition update) {
         scope = Scope.FIRST;
         return repo.updateExecute(this, update);
     }
